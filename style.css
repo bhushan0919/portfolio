@@ -64,6 +64,8 @@ body{
 }
 .home-content{
     max-width: 600px;
+    margin: -4%;
+    padding: 0%;
 }
 .home-content h3{
     font-size: 32px;
@@ -90,6 +92,8 @@ body{
 }
 .home-content p{
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
@@ -684,6 +688,10 @@ section{
     border-radius: 0.5rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
 
 
 
@@ -731,3 +739,131 @@ section{
         opacity: 1;
     }
 }
+
+
+
+/* Tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .home-content h1 {
+      font-size: 40px;
+    }
+    .about {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Mobile devices */
+  @media (max-width: 768px) {
+    .navbar a {
+      font-size: 18px;
+      margin-left: 15px;
+    }
+    .home {
+      padding: 50px 5%;
+    }
+    .contact {
+      grid-template-columns: 1fr;
+    }
+    .contact-text h2 {
+      font-size: 50px;
+    }
+  }
+
+
+
+
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+  }
+  
+  .hamburger .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Main layout styles */
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100vh;
+    padding: 70px 10% 0;
+  }
+  
+  .home-content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  /* Profile Image Styling */
+  .home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-image .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url('Home.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 25px #0ef, 0 0 50px #0ef, 0 0 100px #0ef;
+  }
+  
+  /* Responsive Navigation */
+  @media (max-width: 768px) {
+    .navbar {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #081b29;
+      padding: 10px 20px;
+      border-radius: 8px;
+      flex-direction: column;
+    }
+    .navbar a {
+      margin: 10px 0;
+      padding: 10px;
+      text-align: center;
+    }
+    .navbar.active {
+      display: flex;
+    }
+    .hamburger {
+      display: flex;
+    }
+    .home {
+      flex-direction: column;
+      text-align: center;
+    }
+    .home-content, .home-image {
+      max-width: 100%;
+    }
+    .home-image .profile-pic {
+      width: 200px;
+      height: 200px;
+    }
+  
+ 
+  }
+
+  
+
+  
+  

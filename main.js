@@ -5,3 +5,18 @@ var typed = new Typed(".text",{
     backDelay : 1000,
     loop : true
 });
+
+
+function toggleMenu() {
+    const navMenu = document.getElementById('navMenu');
+    navMenu.classList.toggle('active');
+  }
+
+
+  window.addEventListener('click', function(event) {
+    const navMenu = document.getElementById('navMenu');
+    const hamburger = document.querySelector('.hamburger');
+    if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+      navMenu.classList.remove('active');
+    }
+  });
