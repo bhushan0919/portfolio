@@ -311,12 +311,17 @@
       
         <!-- Feedback Form -->
         <div class="contact-form">
-          <form name="feedback" method="POST" data-netlify="true">
+            <form name="feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
             <input type="hidden" name="form-name" value="feedback" />
+            <p hidden>
+                <label>Do not fill this out: <input name="bot-field" /></label>
+              </p>
+
             <input type="text" name="name" placeholder="Enter Your Name" required />
             <input type="email" name="email" placeholder="Enter Your Email" required />
             <input type="text" name="subject" placeholder="Enter Your Subject" />
             <textarea name="message" cols="40" rows="10" placeholder="Enter Your Feedback" required></textarea>
+            <div data-netlify-recaptcha="true"></div>
             <input type="submit" value="Submit Feedback" class="send" />
           </form>
         </div>
@@ -328,10 +333,6 @@
         </p> 
     </div>
     <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
-
-
-
-
 
 
 
