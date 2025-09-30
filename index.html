@@ -1,341 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Bhushan Gavhane Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Portfolio of Bhushan Gavhane - Web Developer, Software Engineer, and MS Azure Certified. Skilled in MERN, Python, Java, Data Science, and Cloud.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <style>
+        /*======================================
+//--//-->   ABOUT
+======================================*/
+
+        .about-mf .box-shadow-full {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .about-mf .about-img {
+            margin-bottom: 2rem;
+        }
+
+        .about-mf .about-img img {
+            margin-left: 10px;
+        }
+
+        .skill-mf .progress {
+            /* background-color: #cde1f8; */
+            margin: .5rem 0 1.2rem 0;
+            border-radius: 0;
+            height: .7rem;
+        }
+
+        .skill-mf .progress .progress-bar {
+            height: .7rem;
+            background-color: #ffbd39;
+        }
+
+        /* Animation styles */
+
+        #typing-animation {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) infinite;
+        }
+
+        #typing-animation:before {
+            content: "";
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #ccc;
+            animation: typing-cursor 0.5s ease-in-out infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes typing-cursor {
+            from {
+                width: 5px;
+            }
+
+            to {
+                width: 0;
+            }
+        }
+
+        /* project image zoom effect */
+
+        .zoom-effect {
+            overflow: hidden;
+            transition: transform 0.3s ease-out;
+        }
+
+        .zoom-effect:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+
 </head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
 
-       <!-- Hamburger Menu Icon -->
-<div class="hamburger" onclick="toggleMenu()">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-  
-  <!-- Navigation Menu -->
-  <nav class="navbar" id="navMenu">
-    <a href="#home" style="--i:1" class="active">Home</a>
-    <a href="#about" style="--i:2">About</a>
-    <a href="#services" style="--i:3">Skills</a>
-    <a href="#skills" style="--i:4">Portfolio</a>
-    <a href="#contact" style="--i:5">Contact</a>
-  </nav>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class='navbar-brand' href='/'>Bhushan Gavhane</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
 
-
-    </header>
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Bhushan Gavhane</h1>
-            <h3>And I'm a <span class="text"></span></h3>
-            <p>I'm a Web Developer. <br/>
-                My first exposure to professional life through internship has benefited me mostly in
-                strengthening my personal skills. I have developed a positive attitude and a strong
-                sense of responsibility being innovative , resourceful, open and responsive to change. It has
-                created in me an interest in lifelong learning.
-            </p>
-            <div class="home-scl">
-                <a href="https://www.facebook.com/bhushan.gavhane.980" target="_blank" rel="noopener noreferrer" style="--i:7"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/bhushan_0919" target="_blank" rel="noopener noreferrer" style="--i:8"><i class="bx bxl-instagram" ></i></a>
-                <a href="https://github.com/bhushan0919" target="_blank" rel="noopener noreferrer" style="--i:9"><i class="bx bxl-github" ></i></a>
-                <a href="https://www.linkedin.com/in/bhushan-gavhane" target="_blank" rel="noopener noreferrer" style="--i:10"><i class="bx bxl-linkedin" ></i></a>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About Me</span></a></li>
+                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+                    <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                </ul>
             </div>
-            <a href="#" class="btn-box">More About Me</a>
         </div>
-        <span class="home-imgHover"></span>
-    </section>
+    </nav>
+    <section id="home-section" class="hero">
+        <div class="home-slider  owl-carousel">
+            <div class="slider-item ">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+                        data-scrollax-parent="true">
+                        <div class="one-third js-fullheight order-md-last img"
+                            style="background-image:url(images/s3.jpg);">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="one-forth d-flex  align-items-center ftco-animate"
+                            data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <span class="subheading">Hello!</span>
+                                <h1 class="mb-4 mt-3">I'm <span>Bhushan Gavhane</span></h1>
 
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="./images/About.png" alt="">
-        </div>
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4>Java Developer!</h4>
-            <p>
-                I'm Bhushan Gavhane and I'm from Pune. I'm an engineering Student from SIT College specialized in Computer Engineering. I'm working hard in my education and maintaining a CGPA of 8.
-                Along with my degree I'm Doing Machine Learning Course Online.Now I'm ready to apply my knowledge into practice.Though I do not have any real life working experience, I've  had a lot of exposure to the software field.
-                My Goal is to build a successfull career as a Software Developer.Moving forward in my career I hope to expand my experience across different industries.
-                I'm a good learner and team player
-                That's all about my self.
-                
-               
-            </p>
-            <a href="#" class="btn-box">More About Me</a>
-        </div>
-    </section>
+                                <!-- Element to contain animated typing -->
+                                <span id="typing-animation"></span>
 
-    <section>
-        <div class="services" id="services">
-            <div class="container">
-                <h1 class="sub-title">My <span>Skills</span></h1>
-                <div class="services-list">
-                    <div>
-                        <i class="bx bx-code-alt"></i>
-                        <h2>Web Developer</h2>
-                        <p>Learn the Web Development during the initial phase of my diploma. Created many small projects and some mid level projects as the practice. 
-                        </p>
-                        <a href="https://youtu.be/l1EssrLxt7E?si=04bfI_agHRQIKHuH" target="_blank" rel="noopener noreferrer" class="read">Learn More</a>
-                    </div>
-                    
-                    <div>
-                        <i class="bx bxl-python" style="color:#00eeff"></i>
-                        <h2>Python</h2>
-                        <p>Learn Python in the college and did the course of the advanced Python online. Created the small projects such as Tic-tac-toe, calculator, age calculator, and many more during the academic caricular.
-                        </p>
-                        <a href="https://youtu.be/UrsmFxEIp5k?si=Iw_JxwjndKuoIEUJ" target="_blank" rel="noopener noreferrer" class="read">Learn More</a>
-                    </div>
-                    <div>
-                        <i class="bx bx-code-alt"></i>
-                        <h2>Django</h2>
-                        <p>As the Intern in SSIT Pvt. Ltd. for the web development i learn the Django framework with Python as the backend for it.
-                        </p>
-                        <a href="https://www.simplilearn.com/free-python-django-course-skillup" target="_blank" rel="noopener noreferrer" class="read">Learn More</a>
-                    </div>
-                    <div>
-                        <i class="bx bxl-android" style="color:#00eeff"></i>
-                        <h2>Java Development</h2>
-                        <p>I learned Java development during my diploma and can solve basic programming problems. Currently, practicing DSA to improve further.</p>
-                        <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop" target="_blank" rel="noopener noreferrer" class="read">Learn More</a>
+                                <script>
+                                    // Initialize the typing animation
+                                    const typingAnimationElement = document.getElementById('typing-animation');
+
+                                    // Create an array of typing text
+                                    const typingTexts = [
+                                        'Web Developer  ',
+                                        'Software Developer  ',
+                                        'MS Azure Certified',
+                                    ];
+
+                                    // Create a function to display the typing animation for a given text
+                                    function playTypingAnimation(text) {
+                                        // Loop through each character and add it to the element
+                                        for (let i = 0; i < text.length; i++) {
+                                            setTimeout(() => {
+                                                typingAnimationElement.textContent += text[i];
+                                            }, i * 200); // Increase the delay to slow down the typing animation
+                                        }
+
+                                        // Once the animation is complete, reset the text and start over
+                                        setTimeout(() => {
+                                            typingAnimationElement.textContent = '';
+                                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                                        }, text.length * 200);
+                                    }
+
+                                    // Start the typing animation loop
+                                    playTypingAnimation(typingTexts[0]);
+                                </script>
+
+                                <br>
+                                <br>
+                                <h2>A Passionate Developer</h2>
+                                <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+                                <!-- <br> -->
+                                <p><a href="https://www.linkedin.com/in/bhushan-gavhane" target="_blank"
+                                        class="btn btn-primary py-3 px-4">LinkedIn</a>
+                                    <a href="https://github.com/bhushan0919" target="_blank"
+                                        class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <h1 class="sub-title">My <span>Skills</span></h1>
 
-    <section>
-        <div class="container1" id="skills">
-            
-            <h1 class="heading1">Technical Skills</h1>
-            <div class="Technical-bars">
-                <div class="bar"><i style="color: #c95d2e" class="bx bxl-html5"></i>
-                    <div class="info">
-                        <span>HTML</span>
-                    </div>
-                    <div class="progress-line html">
-                        <span></span>
-                    </div>
-                </div><br/>
-                <div class="bar"><i style="color: #147bbc" class="bx bxl-css3"></i>
-                    <div class="info">
-                        <span>CSS</span>
-                    </div>
-                    <div class="progress-line css">
-                        <span></span>
-                    </div>
-                </div><br/>
-                <div class="bar"><i style="color: #b0bc1e" class="bx bxl-javascript"></i>
-                    <div class="info">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="progress-line javaScript">
-                        <span></span>
-                    </div>
-                </div><br/>
-                <div class="bar"><i style="color: #c32ec9" class="bx bxl-python"></i>
-                    <div class="info">
-                        <span>Python</span>
-                    </div>
-                    <div class="progress-line python">
-                        <span></span>
-                    </div>
-                </div><br/>
 
-                <div class="bar"><i style="color: #f56d0c" class="bx bxl-django"></i>
-                    <div class="info">
-                        <span>Python and Django</span>
-                    </div>
-                    <div class="progress-line python-django">
-                        <span></span>
-                    </div>
-                </div><br/>
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="row d-flex align-items-stretch">
+                    <!-- <div class="row d-flex"> -->
+                    <div class="col-md-6 col-lg-5 d-flex">
+                        <div class="img-about img d-flex align-items-stretch">
+                            <div class="overlay">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-5">
+                                        <div class="about-img">
+                                            <img src="images/s1.png" class="img-fluid rounded b-shadow-a" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Details next to profile image -->
+                                    <div class="col-sm-6 col-md-7">
+                                        <div class="about-info">
+                                            <p><span class="title-s">Name: </span> <span>Bhushan Gavhane</span></p>
+                                            <p><span class="title-s">Job Role: </span> <span>Developer</span></p>
+                                            <p><span class="title-s">Address: </span> <span>Pune, India</span></p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                <div class="bar"><i style="color: #69bcbc" class="bx bxl-android"></i>
-                    <div class="info">
-                        <span>Android Development </span>
+                                <div class="skill-mf">
+                                    <p class="title-s">Skills</p>
+                                    <span>MySQL and MongoDB</span> <span class="pull-right">80%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;"
+                                            aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <span>Programming Languages: JAVA & PYTHON</span> <span
+                                        class="pull-right">85%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%"
+                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <span>Data Science</span> <span class="pull-right">80%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%"
+                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <span>Cloud</span> <span class="pull-right">60%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%"
+                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <span>MERN STACK</span> <span class="pull-right">80%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="progress-line android">
-                        <span> </span>
+
+                    <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                        <div class="row justify-content-start pb-3">
+                            <div class="col-md-12 heading-section ftco-animate">
+
+                                <h1 class="big">About</h1>
+                                <h2 class="mb-4">About Me</h2>
+
+                                <p>Hi, I’m Bhushan, a passionate and adaptable Software Engineer with a proven track
+                                    record in operational efficiency and project execution. I specialize in crafting
+                                    dynamic web applications using front-end and back-end technologies
+                                    and have demonstrated leadership in diverse roles. With a strong foundation in
+                                    programming and communication skills, I aim to deliver impactful solutions and drive
+                                    innovation.</p>
+                                <ul class="about-info mt-4 px-md-0 px-2">
+                                    <li class="d-flex"><span>Profile:</span> <span>Passionate &amp; Developer</span>
+                                    </li>
+                                    <li class="d-flex"><span>Domain:</span> <span>MERN Stack Development&amp; Software
+                                            Development</span></li>
+                                    <li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+                                    <li class="d-flex"><span>Language:</span> <span>English, Hindi, Marathi</span></li>
+                                    <li class="d-flex"><span>Tools:</span> <span>Power BI, Tableau &amp; Django</span>
+                                    </li>
+                                    <li class="d-flex"><span>Other Skills:</span> <span>Linux, Excel, Git, Youtube &
+                                            Google Analytics &amp; SEO</span></li>
+                                    <li class="d-flex"><span>Interest:</span> <span>Cricket, Photography &amp;
+                                            Traveling</span></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                            <div class="text">
+
+                                <p><a href="https://leetcode.com/u/bhushan_0919/" target="_blank" class="btn btn-primary py-3 px-3">Leetcode</a></p>
+                            </div>
+                            <div class="text">
+
+                                <p><a href="https://www.geeksforgeeks.org/user/bhushangayhwp/" target="_blank" class="btn btn-primary py-3 px-3">GFG</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-10 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Resume</h1>
+                    <h2 class="mb-4">Resume</h2>
+                    <p>I’m Bhushan Gavhane, a passionate Software Engineer with expertise in full-stack development,
+                        database management, and cloud basics. Beyond coding, I enjoy watching Cricket, Traveling,
+                        Photography and exploring creative projects.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <h1 class="big-4">Experience</h1>
+                <div class="underline"></div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">June 2022- July 2022</span>
+                        <h2>Python Django Intern</h2>
+                        <span class="position">Intern</span>
+                        <p class="mt-4">Engineered a scalable web application, 'Virtual Car Showroom,' using Python,
+                            Django, and a responsive design; this provided cross-device compatibility and improved user
+                            engagement by 20%.</p>
+
+
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">Dec 2024- Feb 2025</span>
+                        <h2>Sanyu Info Tech</h2>
+                        <span class="position">Data Science Intern</span>
+                        <p class="mt-4">Managed interactive dashboards and reports using Power BI, Tableau, and Python
+                            (Pandas, NumPy,
+                            Matplotlib), improving data accuracy by 25% and reducing reporting time by 40%. Applied
+                            machine learning
+                            models and visualizations to support data-driven decisions and enhance operational
+                            efficiency.
+
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+                <h1 class="big-4">Education</h1>
+                <div class="underline"></div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2023-2026</span>
+                        <h2>Bachelor of Engineering</h2>
+                        <span class="position"> Sinhgad Institute of Technology<br>Savitribai Phule University</span>
+                        <p class="mt-4">SGPA: 8.6</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2020-2023</span>
+                        <h2>Diploma</h2>
+                        <span class="position">Amrutvahini College of Polytechnic</span>
+                        <p class="mt-4">Grade: First class with distinction</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2008-2020</span>
+                        <h2>Higher Secondary School</h2>
+                        <span class="position">St. Mary's Secondary School</span>
+                        <p class="mt-4">Score: 84%</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6 text-center ftco-animate">
+                    <p><a href="https://drive.google.com/file/d/1MBFpJAvSKHVpgJsWi_kobqZTPWnOfIFe/view?usp=sharing"
+                            class="btn btn-primary py-4 px-5" target="_blank">Download Resume</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="ftco-section" id="project-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Projects</h1>
+                    <h2 class="mb-4">Projects</h2>
+                    <p>Here to create a lasting impact!</p>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="https://github.com/bhushan0919/Online-Job-Portal" target="_blank" class="block-20 zoom-effect"
+                            style="background-image: url('images/P1.png');">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+
+                            <h3 class="heading"><a href="https://github.com/bhushan0919/Online-Job-Portal " target="_blank">Online Job
+                                    Portal</a></h3>
+                            <p>
+                                Built an online job portal to improve remote job accessibility by 40%, featuring a
+                                responsive interface
+                                for enhanced user experience. Integrated PHP and PhpMyAdmin for secure user
+                                authentication, job
+                                listings, and application tracking. Enhanced performance, scalability, and real-time job
+                                updates to
+                                streamline the job search and recruitment process.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="https://github.com/bhushan0919/Building-Construction-Estimator" target="_blank"
+                            class="block-20 zoom-effect" style="background-image: url('images/P2.png');">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+
+                            <h3 class="heading"><a
+                                    href="https://github.com/bhushan0919/Building-Construction-Estimator" target="_blank">Building
+                                    Contruction Estimator</a></h3>
+                            <p>
+                                Created a responsive cost estimation tool using HTML5, CSS, Bootstrap, PHP, and
+                                PhpMyAdmin,
+                                improving usability and reducing manual budgeting effort by 35%. Automated cost
+                                calculations and
+                                ensured secure data handling, enhancing accuracy and streamlining workflows. Optimized
+                                for
+                                performance and cross-platform use, supporting real-time forecasting and resource
+                                planning in
+                                construction management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry">
+                        <a href="https://github.com/bhushan0919/Virtual-Car-Showroom" target="_blank" class="block-20 zoom-effect"
+                            style="background-image: url('images/P3.png');">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+
+                            <h3 class="heading"><a href="https://github.com/bhushan0919/Virtual-Car-Showroom" target="_blank">Virtual
+                                    Car Showroom</a></h3>
+                            <p>Designed the Web APplication based on car showroom, its features, price and all other
+                                details in detail. It was developed using Python with Django Framework.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- added justify-content-center to center align the last two projects -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="https://github.com/bhushan0919/Unit-Converter"target="_blank" class="block-20 zoom-effect"
+                            style="background-image: url('images/P4.png');">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+
+                            <h3 class="heading"><a href="https://github.com/bhushan0919/Unit-Converter" target="_blank">Unit
+                                    Converter</a></h3>
+                            <p>Designed the Unit Converter were the Temperature can be converted. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="https://github.com/bhushan0919/Crop_Production_Prediction" target="_blank" class="block-20 zoom-effect"
+                            style="background-image: url('images/P5.png');">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+
+                            <h3 class="heading"><a href="https://github.com/bhushan0919/Crop_Production_Prediction" target="_blank">Crop
+                                    Production Prediction</a></h3>
+                            <p>Developed an ML model to give various recommendations of production of crops.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+        <div class="container">
+            <div class="row d-md-flex align-items-center">
+
+                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18">
+                        <div class="text">
+                            <strong class="number" data-number="20">15+</strong>
+                            <span>Projects & Courses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18">
+                        <div class="text">
+                            <strong class="number" data-number="500">500+</strong>
+                            <span>Cups of coffee</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container1">
-            <h1 class="heading1">Professional Skills</h1>
-            <div class="radial-bars">
-
-             <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">90%</div>
-                <div class="text">Creativity</div>
-             </div>
-
-             <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">85%</div>
-                <div class="text">Creativity</div>
-             </div>
-
-             <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">75%</div>
-                <div class="text">Problem Solving</div>
-             </div>
-
-             <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">85%</div>
-                <div class="text">TeamWork</div>
-             </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="portfolio" id="project">
-            <div class="main-text" id="project1">
-                <h2>Latest <span>Project</span></h2>
-                
-
-
-                <div class="portfolio-content">
-                    <div class="row">
-                        <img src="./images/Project1.png">
-                        <div class="layer">
-                            <h5>Job Finder</h5>
-                            <p>Job Finder is a web-based appliation mainly helpful for the employees who 
-                                are unemployeed and wants to get placed as well as it is also useful for the companies who are hiring people for jobs.
-                                The software has easy navigation interface.
-                                Seekers must be having account so which they can search or find the jobs according to their swearching categories.
-                                 
-                            </p>
-                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <img src="./images/Project2.png">
-                        <div class="layer">
-                            <h5>Building Construction Estimator</h5>
-                            <p>Building Construction Estimator is a web application in which the building contractor can can estimate the 
-                                value of the building. The person have to only enter the area of the building. The estimate value will 
-                                be shown. Also he can edit the rates of the cement,sand,steel,bricks. The person will get the brief information about the 
-                                number of labours needed and their daily rates. 
-                            </p>
-                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-
-                    
-
-                    <div class="row">
-                        <img src="./images/Project3.png">
-                        <div class="layer">
-                            <h5>Virtual Car Showroom</h5>
-                            <p>The Virtual Car Showroom is the Web-Based application developed for the car showroom.
-                                The people can see all types of the cars and get the detailed information about the car and if they 
-                                liked the car can click on the car and they will be directed to the offcial website of the Car 
-                                and can book the car. 
-                            </p>
-                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-
-
-
-                    
-
-
-                    <div class="row">
-                        <img src="./images/crop.png">
-                        <div class="layer">
-                            <h5>Crop Production Prediction</h5>
-                            <p>The Project basically predicts the crop Production. It was developed using the green AI using the machine learning. This project was developed as the project task during the Green AI workshop conducted in the college. 
-                            </p>
-                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-
-
-                    
-                    
-                   
-
-
+        <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+            <!-- <div class="container"> -->
+            <div class="row justify-content-center">
+                <div class="col-md-7 ftco-animate text-center">
 
                 </div>
             </div>
+            <!-- </div> -->
         </div>
     </section>
-    
-    <section class="contact" id="contact">
-        <div class="contact-text">
-          <h2>Contact <span>Me</span></h2>
-          <h4>Let's Work Together</h4>
-          <p>I would love to hear your thoughts, suggestions, or any feedback you have!</p>
-          <div class="contact-list">
-            <li><i class="bx bxs-send"></i> bhushangavhane06@gmail.com</li>
-            <li><i class="bx bx-phone"></i> 9373120370</li>
-          </div>
-          <div class="contact-icons">
-            <a href="https://www.facebook.com/bhushan.gavhane.980" target="_blank" rel="noopener noreferrer" style="--i:7"><i class="bx bxl-facebook"></i></a>
-            <a href="https://www.instagram.com/bhushan_0919" target="_blank" rel="noopener noreferrer" style="--i:8"><i class="bx bxl-instagram"></i></a>
-            <a href="https://twitter.com/BhushanGav20815" target="_blank" rel="noopener noreferrer" style="--i:9"><i class="bx bxl-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/bhushan-gavhane" target="_blank" rel="noopener noreferrer" style="--i:10"><i class="bx bxl-linkedin"></i></a>
-          </div>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Contact</h1>
+                    <h2 class="mb-4">Contact Me</h2>
+                    <p>Below are the details to reach out to me!</p>
+                </div>
+            </div>
+
+            <div class="row d-flex contact-info mb-5">
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-map-signs"></span>
+                        </div>
+                        <h3 class="mb-4">Address</h3>
+                        <p>Pune, India</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-phone2"></span>
+                        </div>
+                        <h3 class="mb-4">Contact Number</h3>
+                        <a href="tel:+919373120370">+91 93731 20370</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-paper-plane"></span>
+                        </div>
+                        <h3 class="mb-4">Email Address</h3>
+                        <p><a href="mailto:bhushangavhane06@gmail.com">bhushangavhane06@gmail.com</a></p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-globe"></span>
+                        </div>
+                        <h3 class="mb-4">Download Resume</h3>
+                        <p><a href="https://drive.google.com/file/d/1MBFpJAvSKHVpgJsWi_kobqZTPWnOfIFe/view?usp=sharing" target="_blank">Click
+                                Here!</a></p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <br>
+                    <br>
+
+                    <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+                        <li class="ftco-animate normal-txt">Find me on </li>
+                        <li class="ftco-animate">
+                            <a href="https://github.com/bhushan0919" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+
+                        <li class="ftco-animate">
+                            <a href="https://www.linkedin.com/in/bhushan-gavhane/" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li class="ftco-animate">
+                            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li class="ftco-animate">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li class="ftco-animate">
+                            <a href="https://www.instagram.com/bhushan_0919/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <br>
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p>
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | Bhushan Gavhane <i class="icon-heart color-danger"
+                            aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
         </div>
-      
-        <!-- Feedback Form -->
-        <div class="contact-form">
-            <form name="feedback" action="POST" data-netlify="true" >
-            <input type="hidden" name="form-name" value="feedback" />
-            <p hidden>
-                <label>Do not fill this out: <input name="bot-field" /></label>
-              </p>
-
-            <input type="text" name="name" placeholder="Enter Your Name" required />
-            <input type="email" name="email" placeholder="Enter Your Email" required />
-            <input type="text" name="subject" placeholder="Enter Your Subject" />
-            <textarea name="message" cols="40" rows="10" placeholder="Enter Your Feedback" required></textarea>
-            <div data-netlify-recaptcha="true"></div>
-            <input type="submit" value="Submit Feedback" class="send" />
-          </form>
-        </div>
-      </section>
-      
-    <div class="last-text">
-        <p>Developed By Bhushan 
-           
-        </p> 
-    </div>
-    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    </footer>
 
 
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
 
-    <script src="main.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
